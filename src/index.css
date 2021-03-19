@@ -1,13 +1,180 @@
-body {
+@import url('https://fonts.google.com/specimen/Montserrat?preview.text_type=custom');
+@import url('https://docs.microsoft.com/en-us/typography/font-list/georgia-pro');
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: "Georgia-Pro";
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+  font-family: "Georgia-Pro",
+  monospace;
+}
+ /******************************************* SIGN IN PAGE *******************************************/
+.container-fluid{
+  margin-top: 100px;
+}
+
+.SignInImg{
+  padding-top: 100px;
+}
+
+.SignInForm{
+  padding: 10px;
+}
+
+.SignIn h1{ 
+  font-family: "Montserrat";
+  font-size: 4em;
+  color: #333333;
+  font-weight:bold;
+  text-align: left;
+  padding-bottom: 40px;
+}
+
+.SignInForm input[type=text]{
+  width: 95%;
+  height: 65px;
+  border: 2px solid #000;
+  border-radius: 0px;
+  margin-bottom: 30px;
+  font-size: 1.25em;
+  text-align: center;
+}
+
+.SignInForm input[type=password]{
+  width: 95%;
+  height: 65px;
+  border: 2px solid #000;
+  border-radius: 0px;
+  margin-bottom: 1px;
+  font-size: 1.25em;
+  text-align: center;
+}
+
+::placeholder {
+  color: #B3B3B3;
+  font-weight: bolder;
+  font-family: "Georgia-Pro";
+  text-align: center;
+  font-size: 1.25em;
+}
+
+.SignInlink{
+  color: #ED1C24;
+  text-decoration: underline;
+  text-decoration-color: #ED1C24;
+  float: right;
+  margin-right: 12px;
+  font-size: 1.05rem;
+  font-family: 'Georgia-Pro';
+}
+
+.SignInlink:hover {
+	color: #b30303;
+  text-decoration: underline;
+  text-decoration-color: #b30303;
+}
+
+.SignInForm input[type="radio"]{
+  appearance: none;
+  border: 2px solid #000;
+  width: 30px;
+  height: 30px;
+  content: none;
+  outline: none;
+  margin: 0;
+  float: left;
+  margin-left: 20px;
+}
+
+.SignInForm input[type="radio"]:checked {
+  appearance: none;
+  outline: none;
+  padding: 0;
+  content: none;
+  float: left;
+  margin-left: 20px;
+}
+
+.SignInForm input[type="radio"]:checked::before{
+  color: black !important;
+  content: "\00A0\2713\00A0" !important;
+  font-weight: bolder;
+  font-size: 21px;
+}
+
+.SignInRadioBtnLabel{
+  float: left;
+  margin-left: 20px;
+  font-family: 'Georgia-Pro';
+  font-size: 16px;
+}
+
+.SignInForm input[type="button"] {
+  background-color: #384C6E;
+  border: none;
+  border-radius: 20px;
+  color: white;
+  width: 150px;
+  height: 60px;
+  margin-left: 20px;
+  text-align: center;
+  float: left;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.SignInForm input[type="button"]:hover {
+  background-color: #102446;
+}
+
+.SignInForm input[type="button"]:focus {
+    outline: 0 !important;
+}
+
+@media screen and (max-width: 600px) {
+
+   /******************************************* SIGN IN PAGE *******************************************/
+
+  .container-fluid{
+    margin: 0;
+    overflow: hidden;
+  }
+
+  .SignInImg{
+    margin-top: -100px;
+  }
+
+  .section1 {
+    width: 100%;
+  }
+
+  .section1 img{
+    width: 480px;
+    height: 300px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .SignIn h1{ 
+    font-family: "Montserrat";
+    font-size: 4em;
+    color: #333333;
+    font-weight:bold;
+    text-align: center;
+    padding-bottom: 10px;
+  }
+
+  .SignInForm input[type="button"] {
+    width: 95%;
+    margin-bottom: 50px;
+    margin:20px;
+    display: block;
+  }
+
 }

@@ -7,6 +7,8 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 import meet_room_pic from './booking_room.jpg';
 
+import Sidebar from './Sidebar.js';
+
 //testing commit 
 const MeetingRoomList = () => {
     return ( 
@@ -19,27 +21,12 @@ const MeetingRoomList = () => {
 
                         {/*column 1*/}
                         <div class="col-4">
+
+                        <Sidebar/>
+
+
                         
-                        <Card className="card-1" style={{ width: '100%', height:'35rem' }}>
 
-                            <Card.Body style={{height:'20%', textAlign:'center', fontSize:'1.5em'}}>
-                                <Card.Link href="#">View Profile</Card.Link>
-                                
-                            </Card.Body>
-
-
-                            <Card.Body style={{height:'20%', textAlign:'center', fontSize:'1.5em'}}>
-                                <Card.Link href="#">Meeting Room List</Card.Link>
-                                
-                            </Card.Body>
-
-                            <Card.Body style={{height:'20%', textAlign:'center', fontSize:'1.5em'}}>
-                                <Card.Link href="#">View Booking</Card.Link>
-
-                            </Card.Body>
-
-                            <Card.Img variant="top" src={meet_room_pic} style={{height:'auto'}}/>
-                        </Card>
 
                         </div>
 
@@ -50,7 +37,7 @@ const MeetingRoomList = () => {
                             {/*column 2*/}
                             <div class="col-8">
 
-                                <Card class="card-2" style={{ width: '100%', height:'35rem' }}>
+                                <Card class="card-mr" style={{ width: '100%', height:'35rem' }}>
                                     <Card.Header>
                                         <Nav variant="tabs" defaultActiveKey="#show_available_meeting_rooms">
                                             <Nav.Item>

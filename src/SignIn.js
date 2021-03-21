@@ -2,7 +2,11 @@ import {Link} from 'react-router-dom';
 import Form from 'react-bootstrap/Form'; 
 import Button from 'react-bootstrap/Form'; 
 
+
+
 const SignIn = () => {
+
+
 
     return ( 
 
@@ -43,7 +47,13 @@ const SignIn = () => {
 
                                 <br/> <br/>
 
-                                <input type="button" className="button" value="SUBMIT"></input>
+                                {/*<input type="button" className="button" value="SUBMIT" href="/UserDetails"></input>*/}
+
+                                 <Link to="/UserDetails">
+                                    <button type="button" className="button" >
+                                         SUBMIT
+                                    </button>
+                                </Link>
 
                                 <br/>
                                 

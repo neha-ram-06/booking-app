@@ -1,10 +1,16 @@
 import profileIcon from './Profile-ICon.png';
 import React, {Component} from  'react';
 import {Link} from 'react-router-dom';
+import {useState} from "react";
+
+
 
 
 
 const Navbar = () => {
+
+
+    const [Activated, setIsActivated]=useState(true);
 
     return ( 
         <div className="navbar">
@@ -17,9 +23,17 @@ const Navbar = () => {
                                 </div>
 
                                 <div className="img-div">
-                                <Link to="#">
+
+                               
+
+                                
+                                <Link to="/UserDetails">
                                 <img src={profileIcon} className="App-logo" alt="logo" class="img-fluid profileIMG"/>
                                 </Link>
+                               
+
+                                
+
                                 </div>
 
             

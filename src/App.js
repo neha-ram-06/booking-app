@@ -17,18 +17,19 @@ function App() {
         
 
             <Switch>
-              
+
                 <Route exact path="/">
+                  {/*<Navbar/>*/}
                     <SignIn/>
                   </Route>
 
                   <Route exact path='/UserDetails'>
-                    <Navbar/>
+                    <Navbar isActive/>
                     <UserDetails/>
                   </Route>
 
                   <Route exact path='/MeetingRoomList'>
-                    <Navbar/>
+                    <Navbar isActive/>
                     <MeetingRoomList/>
                   </Route>
 

@@ -201,15 +201,15 @@ code {
 
 img.profileIMG{
   
-  width:100px;
-  height:100px;
+  width:103px;
+  height:97px;
   border-radius: 50%;
 }
 
 img.profileIMG:hover{
   box-shadow: 0 10px 20px rgba(0,0,0,.12), 0 4px 8px rgba(0,0,0,.06);
   width:105px;
-  height:105px;
+  height:99px;
   background-color:ghostwhite;
 
 }
@@ -236,6 +236,12 @@ img.profileIMG:hover{
     max-width: auto;
   }
 
+  .navbar .booking h1{
+    font-family: Helvetica;
+    color:#0a285a;
+    
+  }
+
 
 
 
@@ -260,9 +266,10 @@ img.profileIMG:hover{
 
 .mrContainer{
   display:flex;
-  padding-top:3px;
+  padding-top:0px;
   padding-bottom:5px; 
   width:100%;
+  
 
   align-items: center; 
   justify-content: center; /*align the rows and cols in the centre*/
@@ -292,20 +299,30 @@ img.profileIMG:hover{
 
 
  .card{
+  
   border-radius:12px;
+  
 } 
 
-.card .nav-item{
+.card-mr .nav-item{
   font-Size:1.5em;
 }
 
 
-.card .card-link:hover{
+.card-1 .card-link{
+
+  color:#2454a7;
+  font-family: Helvetica;
+
+}
+
+.card-1 .card-link:hover{
   
   padding-top:10px;
   padding-right:20px;
   padding-bottom:10px;
   padding-left:20px;
+  color:#384C6E;
   
   background-color:ghostwhite;
   
@@ -315,7 +332,15 @@ img.profileIMG:hover{
 }
 
  
+.card-mr .nav-link{
+  color:#2454a7;
+  font-family: Helvetica;
+}
 
+.card-mr .nav-link:hover{
+  color:#384C6E;
+  font-family: Helvetica;
+}
 
 @media (max-width: 1000px) {
 
@@ -365,3 +390,8 @@ img.profileIMG:hover{
   width:200px;
   height:300px;
 }
+/* 
+.Sidebar-class .Card .card-body{
+  font-size: 12em;
+  font-family: 'Lucida Sans';
+} */

@@ -37,7 +37,7 @@ const MeetingRoomList = () => {
                             {/*column 2*/}
                             <div class="col-8">
 
-                                <Card class="card-mr" style={{ width: '100%', height:'35rem' }}>
+                                <Card className="card-mr" style={{ width: '100%', height:'35rem' }}>
                                     <Card.Header>
                                         <Nav variant="tabs" defaultActiveKey="#show_available_meeting_rooms">
                                             <Nav.Item>

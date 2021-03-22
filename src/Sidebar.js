@@ -16,7 +16,7 @@ const Sidebar = () => {
                                 <Card className="card-1" style={{ width: '100%', height:'35rem' }}>
 
                                 
-                                <Card.Body style={{height:'20%', textAlign:'center', fontSize:'1.5em'}}>
+                                    <Card.Body style={{height:'20%', textAlign:'center', fontSize:'1.5em'}}>
                                         <Card.Link href="/">Sign-In Page</Card.Link>
 
                                     </Card.Body>

@@ -342,6 +342,13 @@ img.profileIMG:hover{
   font-family: Helvetica;
 }
 
+
+.card-mr h2{
+  text-align: center;
+  color:rgb(71, 68, 68);
+  font-family: Helvetica;
+}
+
 @media (max-width: 1000px) {
 
   .mrContainer .row{
@@ -377,6 +384,12 @@ img.profileIMG:hover{
  width:50%;
   
 }
+
+/* .card-booked .table{
+  flex-direction: column;
+  width:100%;
+  height:100%;
+} */
 
 }  
 

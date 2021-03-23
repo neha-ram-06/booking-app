@@ -12,7 +12,7 @@ import Tab from 'react-bootstrap/Tab';
 import BookedRooms from './BookedRooms.js';
 import AvailableRooms from './AvailableRooms.js';
 
-
+import background from './grey_background.jpg';
 
 
 
@@ -23,7 +23,7 @@ const MeetingRoomList = () => {
 
         <div className="MRList">
 
-            <div class="container mrContainer">
+            <div class="container mrContainer2 shadow-sm p-3 mb-3 bg-white rounded" >
 
                 <div class="row" >
 
@@ -36,7 +36,7 @@ const MeetingRoomList = () => {
                     {/*column 2*/}
                     <div class="col-8">
 
-                            <div className ="div-mr" class="border" style={{ width: '100%', height:'35rem', padding:'5px', borderRadius:'2px' }}>
+                            <div className ="div-mr" class="border" style={{ width: '100%', height:'35rem', padding:'5px', borderRadius:'2px', marginTop:'6px' }}>
 
                                 <Tabs defaultActiveKey="available_rooms" transition={false} id="rooms_tabs" className="tab-mr " >
 

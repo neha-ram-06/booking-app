@@ -13,7 +13,7 @@ const Sidebar = () => {
 
                     <div class="container mrContainer">
 
-                                <Card className="card-1 " style={{ width: '100%', height:'35rem' }}>
+                                <Card className="card-1 " style={{ width: '100%', height:'35rem' }}  >
 
                                 
                                     <Card.Body style={{height:'20%', textAlign:'center', fontSize:'1.5em'}}>

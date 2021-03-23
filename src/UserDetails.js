@@ -12,7 +12,7 @@ const UserDetails = () => {
         <div className="UserDetails-class">
 
 
-            <div class="container mrContainer">
+            <div class="container mrContainer shadow-sm p-3 mb-3 bg-white rounded">
 
                 <div class="row" > 
 

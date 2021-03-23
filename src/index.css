@@ -304,7 +304,7 @@ img.profileIMG:hover{
   
 } 
 
-.card-mr .nav-item{
+.tab-mr .nav-item{
   font-Size:1.5em;
 }
 
@@ -332,22 +332,23 @@ img.profileIMG:hover{
 }
 
  
-.card-mr .nav-link{
+.tab-mr .nav-link{
   color:#2454a7;
   font-family: Helvetica;
 }
 
-.card-mr .nav-link:hover{
+.tab-mr .nav-link:hover{
   color:#384C6E;
   font-family: Helvetica;
 }
 
 
-.card-mr h2{
+
+/* .card-mr h2{
   text-align: center;
   color:rgb(71, 68, 68);
   font-family: Helvetica;
-}
+} */
 
 @media (max-width: 1000px) {
 
@@ -380,7 +381,7 @@ img.profileIMG:hover{
     
 }
 
-  .card-mr, .card-ud {
+  .tab-mr, .card-ud {
  width:50%;
   
 }

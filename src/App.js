@@ -35,18 +35,18 @@ function App() {
                     <MeetingRoomList/>
                   </Route>
 
-                   <Route exact path='/Booked_Rooms'>
+                   {/*<Route exact path='/Booked_Rooms'>
                    <Navbar isActive/>
                     <MeetingRoomList booked/>
-                    {/* <BookedRooms/> */}
-                  </Route>
+                    
+                  </Route>*/}
               
 
-               <Route exact path='/Available_Rooms'>
+               {/* <Route exact path='/Available_Rooms'>
                    <Navbar isActive/>
-                    <MeetingRoomList available/>
-                    {/* <BookedRooms/> */}
-                  </Route>
+                    <MeetingRoomList/>
+                    
+                  </Route> */}
 
             </Switch>
  

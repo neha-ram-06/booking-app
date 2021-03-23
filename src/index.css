@@ -53,13 +53,22 @@ code {
   text-align: center;
 }
 
-::placeholder {
+.SignInForm input[type=text]::placeholder {
   color: #B3B3B3;
   font-weight: bolder;
   font-family: "Georgia-Pro";
   text-align: center;
   font-size: 1.25em;
 }
+
+.SignInForm input[type=password]::placeholder {
+  color: #B3B3B3;
+  font-weight: bolder;
+  font-family: "Georgia-Pro";
+  text-align: center;
+  font-size: 1.25em;
+}
+
 
 .SignInlink{
   color: #ED1C24;
@@ -136,6 +145,64 @@ code {
     outline: 0 !important;
 }
 
+/******************************************* MODAL CONTAINER *******************************************/
+.outer-model-container{
+  max-width:40%;
+}
+.modal-container{
+  max-width:70%;
+}
+
+#headingTitle{
+  font-family: "Montserrat";
+  font-size: 4em;
+  color: #333333;
+  font-weight:bold;
+  text-align: left;
+}
+
+.modal-container input[type=text], input[type=date], input[type=time]{
+  width: 100%;
+  height: 55px;
+  border: 1px solid #ccc;
+  border-radius: 0px;
+  margin-bottom: 30px;
+  font-size: 1.25em;
+  text-align: center;
+}
+
+.modal-container select{
+  width:100%;
+  height: 55px;
+  border: 1px solid #ccc;
+  border-radius: 0px;
+  margin-bottom: 30px;
+  font-size: 1.25em;
+  text-align: center;
+  text-align-last:center;
+}
+
+.modal-container input[type=button] {
+  background-color: #384C6E;
+  border: none;
+  border-radius: 20px;
+  color: white;
+  width: 150px;
+  height: 50px;
+  text-align: center;
+  display: block;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  margin: auto;
+}
+
+.modal-container input[type=button]:hover {
+  background-color: #102446;
+}
+
+
 @media screen and (max-width: 600px) {
 
    /******************************************* SIGN IN PAGE *******************************************/
@@ -186,13 +253,7 @@ code {
 
 }
 
-
-
-
-
-
-
-
+/******************************************* NAVBAR *******************************************/
 .navbar h1 {
   color: black;
   
@@ -206,13 +267,13 @@ img.profileIMG{
   border-radius: 50%;
 }
 
-img.profileIMG:hover{
+/*img.profileIMG:hover{
   box-shadow: 0 10px 20px rgba(0,0,0,.12), 0 4px 8px rgba(0,0,0,.06);
   width:105px;
   height:105px;
   background-color:ghostwhite;
 
-}
+}*/
 
 .container .navContainer{
   max-width: auto;

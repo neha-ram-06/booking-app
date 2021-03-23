@@ -8,6 +8,8 @@ import UserDetails from './UserDetails.js';
 
 import Sidebar from './Sidebar.js';
 
+import BookedRooms from './BookedRooms.js';
+
 function App() {
   return (
     <Router>
@@ -17,23 +19,35 @@ function App() {
         
 
             <Switch>
-              
+
                 <Route exact path="/">
+                  {/*<Navbar/>*/}
                     <SignIn/>
                   </Route>
 
                   <Route exact path='/UserDetails'>
-                    <Navbar/>
+                    <Navbar isActive/>
                     <UserDetails/>
                   </Route>
 
                   <Route exact path='/MeetingRoomList'>
-                    <Navbar/>
+                    <Navbar isActive/>
                     <MeetingRoomList/>
                   </Route>
 
- 
+                   {/*<Route exact path='/Booked_Rooms'>
+                   <Navbar isActive/>
+                    <MeetingRoomList booked/>
+                    
+                  </Route>*/}
               
+
+               {/* <Route exact path='/Available_Rooms'>
+                   <Navbar isActive/>
+                    <MeetingRoomList/>
+                    
+                  </Route> */}
+
             </Switch>
  
 

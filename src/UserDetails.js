@@ -10,8 +10,12 @@ const UserDetails = () => {
     return (
 
         <div className="UserDetails-class">
-            <div class="container mrContainer">
-                <div class="row" >
+
+
+            <div class="container mrContainer shadow-sm p-3 mb-3 bg-white rounded">
+
+                <div class="row" > 
+
                     {/*column 1*/}
                     <div class="col-4">
                         <Sidebar />

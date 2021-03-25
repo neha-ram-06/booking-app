@@ -343,15 +343,6 @@ img.profileIMG{
     
   }
 
-
-
-
-
-
-
-
-
-
 .MRList {  /*from MeetingRoomList.js*/
   
   display: flex; /*it means the items in div mrlist are arranged in a row (default property) */
@@ -494,7 +485,6 @@ img.profileIMG{
 } */
 
 }  
-
 
 .mrContainer .list-group-flush{
   width: 100%;

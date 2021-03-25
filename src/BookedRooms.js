@@ -13,10 +13,6 @@ import {
     Form, FormGroup, Label, Input, FormText
 } from 'reactstrap';
 
-
-
-
-
 const BookedRooms = () => {
 
     const [modalShow, setModalShow] = useState(false);

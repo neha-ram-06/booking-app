@@ -1,10 +1,10 @@
-import {Link} from 'react-router-dom';
-import Form from 'react-bootstrap/Form'; 
-import Button from 'react-bootstrap/Form'; 
+import { Link } from 'react-router-dom';
+import Form from 'react-bootstrap/Form';
+import Button from 'react-bootstrap/Form';
 
 const SignIn = () => {
 
-    return ( 
+    return (
 
         <div className="SignIn">
 
@@ -16,7 +16,7 @@ const SignIn = () => {
 
                         <div className="SignInImg">
 
-                            <img src="images/sign-in-pic.jpg" alt="img missing" width="575" height="400"/>
+                            <img src="images/sign-in-pic.jpg" alt="img missing" width="575" height="400" />
 
                         </div>
 
@@ -28,32 +28,37 @@ const SignIn = () => {
 
                         <div className="SignInForm">
 
-                            <form> 
+                            <form>
                                 <input type="text" placeholder="User Id" />
 
                                 <input type="password" placeholder="Password" />
-                                <br/>
+                                <br />
 
                                 <Link className="SignInlink" to="/" >Forgot password</Link>
-                                <br/>
+                                <br />
 
-                                
-                                <input type="radio" id="RadioBtn" name="RadioBtn" value="unchecked"/>
+
+                                <input type="radio" id="RadioBtn" name="RadioBtn" value="unchecked" />
                                 <label className="SignInRadioBtnLabel"> Remember Me</label>
 
-                                <br/> <br/>
+                                <br /> <br />
 
                                 {/*<input type="button" className="button" value="SUBMIT" href="/UserDetails"></input>*/}
 
                                 <Link to="/UserDetails">
                                     <button type="button" className="button" >
-                                         SUBMIT
+                                        SUBMIT
+                                    </button>
+                                </Link>
+                                <Link to="/AdminPage">
+                                    <button type="button" className="button" >
+                                        SUBMIT For admin
                                     </button>
                                 </Link>
 
-                                <br/>
-                                
-                            </form> 
+                                <br />
+
+                            </form>
 
                         </div>
 
@@ -67,5 +72,5 @@ const SignIn = () => {
 
     );
 }
- 
+
 export default SignIn;

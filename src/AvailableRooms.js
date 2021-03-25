@@ -14,11 +14,6 @@ import {
 } from 'reactstrap';
 
 
-
-
-
-
-
 function MyVerticallyCenteredModal(props) {
 
     return (
@@ -75,61 +70,59 @@ function MyVerticallyCenteredModal(props) {
 }
 
 
+const AvailableRooms = () => {
 
+    const [modalShow, setModalShow] = useState(false);
 
-    const AvailableRooms = () => {
+    const [tableValues, settableValues] = useState([
+        { roomId: 1, roomName: 'Buffalo', floorLevel: '6', date: '23/10/2021', time: '1100-1200' },
+        { roomId: 2, roomName: 'Buffalo', floorLevel: '6', date: '23/10/2021', time: '1100-1200' },
+        { roomId: 3, roomName: 'Buffalo', floorLevel: '6', date: '23/10/2021', time: '1100-1200' }
+    ]);
+    return (
 
-        const [modalShow, setModalShow] = useState(false);
+        <div className="AvailableRooms">
+            <Card className="card-available ">
+                <Card.Body>
+                    <Card.Text>
+                        <Table striped bordered hover>
+                            <thead>
+                                <tr>
+                                    <th>Room Name</th>
+                                    <th>Floor Level</th>
+                                    <th>Date</th>
+                                    <th>Time</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                {tableValues.map((tValues) => (
+                                    <tr onClick={() => setModalShow(true)} key={tValues.roomId}>
+                                        <td>{tValues.roomName}</td>
+                                        <td>{tValues.floorLevel}</td>
+                                        <td>{tValues.date}</td>
+                                        <td>{tValues.time}</td>
+                                    </tr>
 
-        const [tableValues, settableValues] = useState([
-            { roomId: 1, roomName: 'Buffalo', floorLevel: '6', date: '23/10/2021', time: '1100-1200' },
-            { roomId: 2, roomName: 'Buffalo', floorLevel: '6', date: '23/10/2021', time: '1100-1200' },
-            { roomId: 3, roomName: 'Buffalo', floorLevel: '6', date: '23/10/2021', time: '1100-1200' }
-        ]);
-        return ( 
+                                ))}
+                            </tbody>
+                        </Table>
+                    </Card.Text>
 
-            <div className="AvailableRooms">
-                        <Card className="card-available ">
-                            <Card.Body>
-                                <Card.Text>
-                                    <Table striped bordered hover>
-                                        <thead>
-                                            <tr>
-                                                <th>Room Name</th>
-                                                <th>Floor Level</th>
-                                                <th>Date</th>
-                                                <th>Time</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            {tableValues.map((tValues) => (
-                                                <tr onClick={() => setModalShow(true)} key= {tValues.roomId}>
-                                                    <td>{tValues.roomName}</td>
-                                                    <td>{tValues.floorLevel}</td>
-                                                    <td>{tValues.date}</td>
-                                                    <td>{tValues.time}</td>
-                                                </tr>
-                                                
-                                            ))}
-                                        </tbody>
-                                    </Table>
-                                </Card.Text>
-
-                            </Card.Body>
-                        </Card>
+                </Card.Body>
+            </Card>
 
 
 
-                        <MyVerticallyCenteredModal
-                            show={modalShow}
-                            onHide={() => setModalShow(false)}
-                        />
+            <MyVerticallyCenteredModal
+                show={modalShow}
+                onHide={() => setModalShow(false)}
+            />
 
 
-</div>
+        </div>
 
 
-         );
-    }
-     
-    export default AvailableRooms;
+    );
+}
+
+export default AvailableRooms;

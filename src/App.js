@@ -2,12 +2,13 @@ import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import './App.css';
 import SignIn from './SignIn';
 
-import Navbar from './Navbar'; //importing the Navbar that we have exported in Navbar.js
+import NavbarStatus from './NavbarStatus'; //importing the Navbar that we have exported in Navbar.js
 import MeetingRoomList from './MeetingRoomList';
 import UserDetails from './UserDetails.js';
 import Sidebar from './Sidebar.js';
 import AdminPage from './AdminPage.js';
 import AllUserDetails from './AllUserDetails';
+import AllRoomDetails from './AllRoomDetails';
 
 import BookedRooms from './BookedRooms.js';
 
@@ -21,28 +22,32 @@ function App() {
               <SignIn />
             </Route>
             <Route exact path='/UserDetails'>
-              <Navbar isActive />
+              <NavbarStatus/>
               <UserDetails />
             </Route>
             <Route exact path='/MeetingRoomList'>
-              <Navbar isActive />
+              <NavbarStatus/>
               <MeetingRoomList />
             </Route>
             <Route exact path='/AdminPage'>
-              <Navbar />
+              <NavbarStatus/>
               <AdminPage />
             </Route>
             <Route exact path='/AllUserDetails'>
-              <Navbar />
+              <NavbarStatus/>
               <AllUserDetails />
             </Route>
             <Route exact path='/Booked_Rooms'>
-              <Navbar isActive />
+              <NavbarStatus/>
               <MeetingRoomList booked />
             </Route>
             <Route exact path='/Available_Rooms'>
-              <Navbar isActive />
+              <NavbarStatus/>
               <MeetingRoomList />
+            </Route>
+            <Route exact path='/AllRoomDetails'>
+              <NavbarStatus/>
+              <AllRoomDetails />
             </Route>
           </Switch>
         </div>

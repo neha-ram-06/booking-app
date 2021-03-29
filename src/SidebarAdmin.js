@@ -3,29 +3,36 @@ import Card from 'react-bootstrap/Card';
 import meet_room_pic from './booking_room.jpg';
 
 const SidebarAdmin = () => {
-    return ( 
+    return (
         <div className="Sidebar-class"> {/*main div*/}
 
             <div class="container mrContainer">
 
-                <Card className="card-1" style={{ width: '100%', height: '35rem' }}>
+                <Card className="card-1" style={{ width: '100%', height: '35rem', border:'0px'}}>
 
+                    <Card style={{ width: '9.5rem', height: '8rem', textAlign: 'center', fontSize: '0.8em', padding:'auto',margin:'auto' }}>
+                        <Card.Body>
+                            <i class="fas fa-user-cog fa-2x" style={{ color: '#00AAFF' }}></i>
+                            <p></p>
+                            <Card.Link href="/AdminPage"><Card.Title>Manage Admin</Card.Title></Card.Link>
+                        </Card.Body>
+                    </Card>
 
-                    <Card.Body style={{ height: '20%', textAlign: 'center', fontSize: '1.5em' }}>
-                        <Card.Link href="/">Manage Admin</Card.Link>
+                     <Card style={{ width: '9.5rem', height: '8.5rem', textAlign: 'center', fontSize: '0.8em', padding:'auto',margin:'auto' }}>
+                        <Card.Body>
+                            <i class="fas fa-user-circle fa-3x" style={{ color: '#9AD0F3' }}></i>
+                            <p></p>
+                            <Card.Link href="/AllUserDetails"><Card.Title>Manage User</Card.Title></Card.Link>
+                        </Card.Body>
+                    </Card>
 
-                    </Card.Body>
-
-
-                    <Card.Body style={{ height: '20%', textAlign: 'center', fontSize: '1.5em' }}>
-                        <Card.Link href="/AllUserDetails">Manage User</Card.Link>
-
-                    </Card.Body>
-
-                    <Card.Body style={{ height: '20%', textAlign: 'center', fontSize: '1.5em' }}>
-                        <Card.Link href="#">Manage room</Card.Link>
-
-                    </Card.Body>
+                    <Card style={{ width: '9.5rem', height: '8rem', textAlign: 'center', fontSize: '0.8em', padding:'auto',margin:'auto' }}>
+                        <Card.Body>
+                            <i class="fas fa-key fa-2x" style={{ color: '#27AAF0' }}></i>
+                            <p></p>
+                            <Card.Link href="/AllRoomDetails"><Card.Title>Manage Room</Card.Title></Card.Link>
+                        </Card.Body>
+                    </Card>
 
                     <Card.Img variant="top" src={meet_room_pic} style={{ height: 'auto' }} />
                 </Card>
@@ -39,5 +46,5 @@ const SidebarAdmin = () => {
         </div>
     );
 }
- 
+
 export default SidebarAdmin;

@@ -7,14 +7,14 @@ import SidebarAdmin from './SidebarAdmin.js';
 const AdminPage = () => {
     return ( 
         <div className="UserDetails-class">
-            <div class="container mrContainer">
-                <div class="row" >
+            <div className="container-fluid">
+                <div className="row no-gutters">
                     {/*column 1*/}
-                    <div class="col-4">
+                    <div className="col-2">
                         <SidebarAdmin/>
                     </div>
-                    <div class="col-8">
-                        <Card class="card-ud" style={{ width: '100%', height: '35rem' }}>
+                    <div className="col-9">
+                        <Card className="card-ud" style={{ width: '100%', height: '35rem' }}>
                             <Card.Img variant="top" src={UserPic} className="user-pic" />
                             <Card.Body>
                                 <Card.Title>Admin's Name</Card.Title>

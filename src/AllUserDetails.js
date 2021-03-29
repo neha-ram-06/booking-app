@@ -149,23 +149,23 @@ const AllUserDetails = () => {
 
     return (
 
-        <div className="AdminUserDetails">
+        <div className="UserDetails-class">
 
-            <div class="container mrContainer">
+            <div class="container-fluid mrContainer">
 
                 <div class="row" >
 
                     {/*column 1*/}
-                    <div class="col-4">
+                    <div class="col-2">
 
                         <SidebarAdmin />
 
                     </div>
                     {/*column 2*/}
-                    <div class="col-8 containerAdmin">
+                    <div class="col-9 containerAdmin">
 
-                        <Card class="card-mr" style={{ width: '100%', height: '35rem' }}>
-                            <Card.Header>
+                        <Card border="light"  class="card-mr" style={{ width: '100%', height: '35rem' }}>
+                            {/*<Card.Header>
                                 <Nav className="wrap" variant="tabs" defaultActiveKey="#show_viewUser">
                                     <div >
                                         <Nav.Item>
@@ -187,15 +187,15 @@ const AllUserDetails = () => {
                                             <Nav.Item>
                                                 <button className="adminIconBtn"> <i class="fas fa-trash-alt"></i></button>
                                             </Nav.Item>
-                                        </span>*/}
+                                        </span>
                                     </div>
 
                                 </Nav>
-                            </Card.Header>
+                            </Card.Header>*/}
                             <Card.Body>
                                 <Card.Text>
                                     <div className="table-responsive">
-                                        <Table striped bordered hover style={{ width: '100%', margin: 'auto' }}>
+                                        <Table responsive="sm"style={{ backgroundColor: '#FFFFFF', width: '100%', margin: 'auto', borderRadius:'5px' }}>
                                             <thead>
                                                 <tr>
                                                     <th style={{ height: '10px' }}>User Id</th>

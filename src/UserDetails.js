@@ -10,13 +10,13 @@ const UserDetails = () => {
     return (
 
         <div className="UserDetails-class">
-            <div class="container mrContainer">
-                <div class="row" >
+            <div className="container-fluid">
+                <div className="row no-gutters">
                     {/*column 1*/}
-                    <div class="col-4">
+                    <div className="col-2">
                         <Sidebar />
                     </div>
-                    <div class="col-8">
+                    <div className="col-9">
                         <Card class="card-ud" style={{ width: '100%', height: '35rem' }}>
                             <Card.Img variant="top" src={UserPic} className="user-pic" />
                             <Card.Body>

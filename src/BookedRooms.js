@@ -25,39 +25,44 @@ const BookedRooms = () => {
 
 
 
-    return ( 
+    return (
 
         <div className="BookedRooms">
-        <Card className="card-booked ">
-        <Card.Body>
-        <Card.Text>
-            <Table striped bordered hover>
-                <thead>
-                    <tr>
-                        <th>Room Name</th>
-                        <th>Floor Level</th>
-                        <th>Date</th>
-                        <th>Time</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    {tableValues.map((tValues) => (
-                        <tr>
-                            <td>{tValues.roomName}</td>
-                            <td>{tValues.floorLevel}</td>
-                            <td>{tValues.date}</td>
-                            <td>{tValues.time}</td>
-                        </tr>
-                        
-                    ))}
-                </tbody>
-            </Table>
-        </Card.Text>
+            <Card className="card-booked ">
+                <Card.Body>
+                    <Card.Text>
+                        <div className="table-responsive">
+                            <Table responsive="sm">
+                                <thead>
+                                    <tr>
+                                        <th>Room Name</th>
+                                        <th>Floor Level</th>
+                                        <th>Date</th>
+                                        <th>Time</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    {tableValues.map((tValues) => (
+                                        <tr>
+                                            <td>{tValues.roomName}</td>
+                                            <td>{tValues.floorLevel}</td>
+                                            <td>{tValues.date}</td>
+                                            <td>{tValues.time}</td>
+                                        </tr>
 
-    </Card.Body>
-</Card>
-</div>
-     );
+                                    ))}
+                                </tbody>
+                            </Table>
+
+                        </div>
+
+                    </Card.Text>
+
+                </Card.Body>
+            </Card>
+        </div>
+    
+    );
 }
- 
+
 export default BookedRooms;

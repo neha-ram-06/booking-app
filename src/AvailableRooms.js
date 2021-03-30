@@ -85,27 +85,30 @@ const AvailableRooms = () => {
             <Card className="card-available ">
                 <Card.Body>
                     <Card.Text>
-                        <Table striped bordered hover>
-                            <thead>
-                                <tr>
-                                    <th>Room Name</th>
-                                    <th>Floor Level</th>
-                                    <th>Date</th>
-                                    <th>Time</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                {tableValues.map((tValues) => (
-                                    <tr onClick={() => setModalShow(true)} key={tValues.roomId}>
-                                        <td>{tValues.roomName}</td>
-                                        <td>{tValues.floorLevel}</td>
-                                        <td>{tValues.date}</td>
-                                        <td>{tValues.time}</td>
+                        <div className="table-responsive">
+                            <Table responsive="sm" hover>
+                                <thead>
+                                    <tr>
+                                        <th>Room Name</th>
+                                        <th>Floor Level</th>
+                                        <th>Date</th>
+                                        <th>Time</th>
                                     </tr>
+                                </thead>
+                                <tbody>
+                                    {tableValues.map((tValues) => (
+                                        <tr onClick={() => setModalShow(true)} key={tValues.roomId}>
+                                            <td>{tValues.roomName}</td>
+                                            <td>{tValues.floorLevel}</td>
+                                            <td>{tValues.date}</td>
+                                            <td>{tValues.time}</td>
+                                        </tr>
 
-                                ))}
-                            </tbody>
-                        </Table>
+                                    ))}
+                                </tbody>
+                            </Table>
+                        </div>
+
                     </Card.Text>
 
                 </Card.Body>

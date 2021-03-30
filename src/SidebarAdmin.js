@@ -6,11 +6,11 @@ const SidebarAdmin = () => {
     return (
         <div className="Sidebar-class"> {/*main div*/}
 
-            <div class="container mrContainer">
+            <div class="container mrContainer" style={{paddingTop:'15px'}}>
 
                 <Card className="card-1" style={{ width: '100%', height: '35rem', border:'0px'}}>
 
-                    <Card style={{ width: '9.5rem', height: '8rem', textAlign: 'center', fontSize: '0.8em', padding:'auto',margin:'auto' }}>
+                    <Card style={{ width: '9.5rem', height: '8rem', textAlign: 'center', fontSize: '0.8em', padding:'auto',margin:'auto', marginBottom:'6px'  }}>
                         <Card.Body>
                             <i class="fas fa-user-cog fa-2x" style={{ color: '#00AAFF' }}></i>
                             <p></p>
@@ -18,7 +18,7 @@ const SidebarAdmin = () => {
                         </Card.Body>
                     </Card>
 
-                     <Card style={{ width: '9.5rem', height: '8.5rem', textAlign: 'center', fontSize: '0.8em', padding:'auto',margin:'auto' }}>
+                     <Card style={{ width: '9.5rem', height: '8.5rem', textAlign: 'center', fontSize: '0.8em', padding:'auto',margin:'auto', marginTop:'6px',marginBottom:'6px' }}>
                         <Card.Body>
                             <i class="fas fa-user-circle fa-3x" style={{ color: '#9AD0F3' }}></i>
                             <p></p>
@@ -26,7 +26,7 @@ const SidebarAdmin = () => {
                         </Card.Body>
                     </Card>
 
-                    <Card style={{ width: '9.5rem', height: '8rem', textAlign: 'center', fontSize: '0.8em', padding:'auto',margin:'auto' }}>
+                    <Card style={{ width: '9.5rem', height: '8rem', textAlign: 'center', fontSize: '0.8em', padding:'auto',margin:'auto' , marginTop:'6px' }}>
                         <Card.Body>
                             <i class="fas fa-key fa-2x" style={{ color: '#27AAF0' }}></i>
                             <p></p>
@@ -44,6 +44,7 @@ const SidebarAdmin = () => {
 
 
         </div>
+    
     );
 }
 

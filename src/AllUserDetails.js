@@ -65,6 +65,7 @@ function MyVerticallyCenteredModal(props) {
                                 <Input type="button" value="SUBMIT" />
                             </FormGroup>
                         </Form>
+                    
                     </div>
                 </Modal.Body>
             </Modal>
@@ -116,9 +117,9 @@ const AllUserDetails = () => {
     const [userDetails, setuserDetails] = useState(false);
 
     const [UsertableValues, setUsertableValues] = useState([
-        { userId: 1, userName: 'xxx', userSurname: 'yy', floorLevel: '6' },
-        { userId: 2, userName: 'xxx', userSurname: 'yy', floorLevel: '10' },
-        { userId: 3, userName: 'xxx', userSurname: 'yy', floorLevel: '2' }
+        { userId: 1, userName: 'xxx', userSurname: 'yy', floorLevel: '6', role:'Admin' },
+        { userId: 2, userName: 'xxx', userSurname: 'yy', floorLevel: '10', role:'Regular' },
+        { userId: 3, userName: 'xxx', userSurname: 'yy', floorLevel: '2', role:'Admin' }
     ]);
 
     const [AddModal, setAddModal] = useState(false);
@@ -158,7 +159,7 @@ const AllUserDetails = () => {
                     {/*column 1*/}
                     <div class="col-2">
 
-                        <SidebarAdmin />
+                        <SidebarAdmin/>
 
                     </div>
                     {/*column 2*/}
@@ -202,6 +203,7 @@ const AllUserDetails = () => {
                                                     <th style={{ width: '200px', height: '10px' }}>Name</th>
                                                     <th style={{ width: '200px' }}>Surname</th>
                                                     <th style={{ height: '10px' }}>Floor Level</th>
+                                                    <th style={{ height: '10px' }}>Role</th>
                                                     <th style={{ height: '10px' }} h>Action</th>
                                                 </tr>
                                             </thead>
@@ -212,6 +214,7 @@ const AllUserDetails = () => {
                                                         <td style={{ width: '200px', height: '10px' }}>{usertValues.userName}</td>
                                                         <td style={{ width: '200px', height: '10px' }}>{usertValues.userSurname}</td>
                                                         <td style={{ height: '10px' }} >{usertValues.floorLevel}</td>
+                                                         <td style={{ height: '10px' }} >{usertValues.role}</td>
                                                         <td className="SelectUserOption" >
                                                             {/*<Input type="select" name="SelectUserOption" id="SelectUserOption" style={{ width: '18px', height: '22px', margin: 'auto' }}>
                                                                 <option value="" disabled selected hidden></option>

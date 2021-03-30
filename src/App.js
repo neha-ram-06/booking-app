@@ -9,8 +9,9 @@ import Sidebar from './Sidebar.js';
 import AdminPage from './AdminPage.js';
 import AllUserDetails from './AllUserDetails';
 import AllRoomDetails from './AllRoomDetails';
-
 import BookedRooms from './BookedRooms.js';
+import ViewBooking from './Viewbooking.js';
+
 
 function App() {
   return (
@@ -48,6 +49,10 @@ function App() {
             <Route exact path='/AllRoomDetails'>
               <NavbarStatus/>
               <AllRoomDetails />
+            </Route>
+            <Route exact path='/ViewBooking'>
+              <NavbarStatus/>
+              <ViewBooking/>
             </Route>
           </Switch>
         </div>

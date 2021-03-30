@@ -26,9 +26,9 @@ const MeetingRoomList = () => {
                 <div className="row no-gutters">
                     {/*column 1*/}
                     <div className="col-2">
-                        <Sidebar />
+                        <Sidebar/>
                     </div>
-                    <div className="col-9">
+                    <div className="col-9" style={{ margin: 'auto',padding: '10px'}}>
 
                         <div className="div-mr" class="border" style={{ width: '100%', height: '35rem', padding: '5px', borderRadius: '2px', marginTop: '6px' }}>
 
@@ -44,6 +44,7 @@ const MeetingRoomList = () => {
 
                             </Tabs>
 
+                            
                         </div>
 
                     </div>

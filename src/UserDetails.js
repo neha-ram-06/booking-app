@@ -1,7 +1,9 @@
 import Card from 'react-bootstrap/Card';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-import UserPic from './blue-background.jpg';
+import UserPic from './user-details-2.png';
+
+
 
 import Sidebar from './Sidebar.js';
 
@@ -24,7 +26,8 @@ const UserDetails = () => {
                         <div className="UserProfileHeader" >
                             <div class="row" style={{ padding: '15px', margin: '15px'}}>
                                 <div class="col-4">
-                                    <i class="fas fa-user-circle fa-8x" style={{ color: '#767676' }}></i>
+                                    {/* <i class="fas fa-user-circle fa-8x" style={{ color: '#767676' }}></i> */}
+                                    <img src={UserPic} style={{ width:'150px', height:'150px', borderRadius:'50%'}}/>
                                 </div>
                                 <div class="col-6">
                                     <h1>John Doe</h1>

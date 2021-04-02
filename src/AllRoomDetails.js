@@ -157,7 +157,16 @@ const AllRoomDetails = () => {
                     </div>
                     {/*column 2*/}
                     <div className="col-9" style={{padding:"10px"}}>
-                        <div className="table-responsive">
+                        <div className="table-responsive" style={{ paddingTop:'19px', height:'100%'}}>
+
+                            <div class="add-btn" style={{width: "100%", height:"42px", backgroundColor:'#DBDBDB'}}>
+                                <span style={{ float: "right"}}>
+                                    <Nav.Item>
+                                        <button className="adminIconBtn" onClick={() => setAddModal(true)} ><i class="fa fa-plus-circle"></i></button>
+                                    </Nav.Item>
+                                </span>
+                            </div>
+
                             <Table responsive="sm" style={{width: '100%', margin: 'auto' }}>
                                 <thead>
                                     <tr>

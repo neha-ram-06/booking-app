@@ -163,9 +163,9 @@ const AllUserDetails = () => {
 
                     </div>
                     {/*column 2*/}
-                    <div class="col-9 containerAdmin">
+                    <div class="col-9 containerAdmin" style={{padding:"10px"}}>
 
-                        <Card border="light"  class="card-mr" style={{ width: '100%', height: '35rem' }}>
+                        {/* <Card border="light"  class="card-mr" style={{ width: '100%', height: '35rem' }}> */}
                             {/*<Card.Header>
                                 <Nav className="wrap" variant="tabs" defaultActiveKey="#show_viewUser">
                                     <div >
@@ -193,9 +193,18 @@ const AllUserDetails = () => {
 
                                 </Nav>
                             </Card.Header>*/}
-                            <Card.Body>
-                                <Card.Text>
-                                    <div className="table-responsive">
+                            {/* <Card.Body>
+                                <Card.Text> */}
+                                    <div className="table-responsive" style={{ paddingTop:'19px', height:'100%'}}>
+
+                                        <div class="add-btn" style={{width: "100%", height:"42px", backgroundColor:'#DBDBDB'}}>
+                                            <span style={{ float: "right"}}>
+                                                <Nav.Item>
+                                                    <button className="adminIconBtn" onClick={() => setAddModal(true)} ><i class="fa fa-plus-circle"></i></button>
+                                                </Nav.Item>
+                                            </span>
+                                        </div>
+
                                         <Table responsive="sm"style={{ backgroundColor: '#FFFFFF', width: '100%', margin: 'auto', borderRadius:'5px' }}>
                                             <thead>
                                                 <tr>
@@ -232,10 +241,10 @@ const AllUserDetails = () => {
                                             </tbody>
                                         </Table>
                                     </div>
-                                </Card.Text>
+                                {/* </Card.Text>
 
                             </Card.Body>
-                        </Card>
+                        </Card> */}
 
                         <MyVerticallyCenteredModal
                             show={AddModal}
